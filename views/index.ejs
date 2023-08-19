@@ -1,31 +1,25 @@
-<!DOCTYPE html>
-<html lang="en">
-<head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- displays site properly based on user's device -->
-
-  <link rel="icon" type="image/png" sizes="32x32" href="/images/favicon-32x32.png">
-  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-4bw+/aepP/YC94hEpVNVgiZdgIC5+VKNBQNGCHeKRQN+PtmoHDEXuppvnDJzQIu9" crossorigin="anonymous">
-  <link rel="stylesheet" href="/styles/style.css">
-  
-  <title>NFT preview card component</title>
-
-</head>
+<%- include("partials/header.ejs") %>
 <body>
 
-    <div id="main" class="container-fluid text-center">
+    <div id="main" role="main" class="container-fluid d-flex justify-content-center align-items-center" style="min-height: 100vh;">
         <div class="row align-items-center">
-            <div class="col-12-sm">
-                <div class="card mx-auto">
-                    <div class="card-body">
-                        <p>Equilibrium #3429
-
-                            Our Equilibrium collection promotes balance and calm.
-                          
-                            0.041 ETH
-                            3 days left
-                            
-                            Creation of Jules Wyvern</p>
+            <div class="col-md-12">
+                <div class="card rounded-4">
+                    <div class="card-body nft-image-box">
+                        <img src="/images/image-equilibrium.jpg" alt="image of nft Equilibrium" class="card-img rounded-3">
+                    </div>
+                    <div class="card-body ">
+                        <div class="nft-image-box">
+                            <h1>Equilibrium #3429</h1>
+                            <p class="card-text">Our Equilibrium collection promotes balance and calm.</p>
+                            <p class="price"><img src="/images/icon-ethereum.svg" alt="ethereum icon"> 0.041 ETH</p>
+                            <p class="days-left"><img src="/images/icon-clock.svg" alt="ethereum icon"> 3 days left</p>
+                        </div>
+                        <div class="nft-image-box">
+                            <br>
+                            <hr>
+                            <p class="creator-name"><img class="creator" src="/images/image-avatar.png" alt="profile picture of nft creator, jules wyvern"> Creation of <span style="font-weight: 400;">Jules Wyvern</span></p>
+                        </div>
                     </div>
                 </div>
             </div>

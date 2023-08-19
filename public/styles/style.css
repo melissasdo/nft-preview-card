@@ -1,12 +1,15 @@
 /* tags */
 body {
-    background-color: hsl(217, 54%, 11%)
+    background-color: hsl(217, 54%, 11%);
+    font-family: 'Outfit', sans-serif;
 }
 
 /* classes */
 
 .attribution {
-    font-size: 11px; text-align: center;
+    color: white;
+    font-size: 11px;
+    text-align: center;
 }
 
 .attribution a {
@@ -14,5 +17,46 @@ body {
 }
 
 .card {
-    width: 20rem;
+    background-color: hsl(216, 50%, 16%);
+    color: hsl(0, 0%, 100%);
+    width: 18rem;
+}
+
+.creator {
+    border: 1px solid white;
+    border-radius: 25px;
+    width: 2rem;
+    margin-right: 0.5rem;
+    size: 1rem;
+}
+
+.creator-name {
+    font-weight: 100;
+    font-size: small;
+}
+
+.card-body h1 {
+    font-weight: 600;
+    font-size: 18px;
+}
+
+.card-text {
+    font-weight: 100;
+}
+
+.days-left {
+    float: right;
+    font-weight: 100;
+    font-size: small;
+}
+
+.nft-image-box {
+    margin: 0.3rem;
+}
+
+.price {
+    color: hsl(178, 100%, 50%);
+    font-weight: 400;
+    font-size: small;
+    float: left;
 }
