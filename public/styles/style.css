@@ -69,3 +69,26 @@ body {
     font-size: small;
     float: left;
 }
+
+.image-container {
+    position: relative;
+    display: inline-block;
+}
+
+.layer-img {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%); /* Center the image */
+    opacity: 0; /* Initially hidden */
+    transition: opacity 0.3s ease-in-out;
+}
+
+
+.nft-image-box:hover .layer-img {
+    opacity: 1; /* Show the layer image on hover */
+}
+
+.nft-image-box:hover img.card-img {
+    filter: brightness(190%) opacity(60%) hue-rotate(335deg);
+}
