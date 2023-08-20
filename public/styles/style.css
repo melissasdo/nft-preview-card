@@ -1,4 +1,9 @@
 /* tags */
+a {
+    color: hsl(0, 0%, 100%);
+    outline: none !important;
+}
+
 body {
     background-color: hsl(217, 54%, 11%);
     font-family: 'Outfit', sans-serif;
@@ -52,6 +57,10 @@ body {
 
 .nft-image-box {
     margin: 0.3rem;
+}
+
+.nft-image-box a:hover {    
+    color: hsl(178, 100%, 50%);
 }
 
 .price {
